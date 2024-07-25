@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="heading" align="center">
+      <pre><h1>Age Calculator <i class="fa-solid fa-calculator"></i></h1></pre>
+    </div>
+    <div class="main">
+      <img
+        src="./how-old-are-you-whats-your-age.gif"
+        alt="Age Calculator GIF"
+        height="600px"
+        width="400px"
+      />
+      <fieldset>
+        <legend>Calculate Here!</legend>
+        <form action="#">
+          <p>Enter Your Name: <input type="text" name="name" id="name" /></p>
+          <p>
+            Enter Your Date of Birth: <input type="date" name="dob" id="dob" />
+          </p>
+          <button id="btn" type="button" onclick="ageCalculator()">
+            Calculate now
+          </button>
+          <button id="reset" type="button">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+          <div id="msg"></div>
+        </form>
+      </fieldset>
+    </div>
+    <script src="./calculator.js"></script>
+  </body>
+</html>
